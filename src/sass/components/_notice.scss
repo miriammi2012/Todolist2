@@ -1,0 +1,60 @@
+
+.completeEditNotice {
+    width: 105px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    background-color: rgba($color-primary-light, 0.6);
+    padding: 1px 8px 3px 8px;
+    border-radius: 0 0 8px 8px;
+    font-size: 0.75rem;
+    cursor: pointer;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.delNotice {
+    position: absolute;
+    top: 0;
+    right: -80px;
+    width: 70px;
+    padding: 3px 10px 5px 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: rgba($color-primary-light, 0.8);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__check {
+        margin-bottom: 2px;
+        margin-left: 2px;
+    }
+
+    &__checkItem {
+        li {
+            @include flexCenter;
+            border-radius: 5px;
+            height: 25px;
+            color: $color-primary-light;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-bottom: 1px;
+            }
+        }
+
+        &--y {
+            background-color: rgba($color-confirm, 0.9);
+        }
+
+        &--n {
+            background-color: rgba($color-warning, 0.9);
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.taskNote {
+    display: flex;
+    color: $color-text;
+    font-weight: 500;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        height: 20px; 
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        padding: 0 10px 0 10px;
+    }
+}
+
+.noteDeadline {
+    .taskNote__content {
+        color: $color-warning;
+    }
+}

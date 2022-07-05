@@ -1,0 +1,223 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+*:focus {
+  outline: none; }
+
+.task__input {
+  position: relative; }
+
+.task__inputarea {
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  border: 3px solid #534a4a;
+  padding-left: 40px;
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: #e9eff3;
+  color: #212121; }
+
+.task__input div {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #534a4a; }
+
+.task__list {
+  margin-top: 15px; }
+
+.taskNote {
+  display: flex;
+  align-items: center; }
+  .taskNote__content {
+    padding: 0 20px 0 5px; }
+
+.taskItem,
+.completeItem {
+  margin-bottom: 20px; }
+
+.taskSimple,
+.taskDetail,
+.completeSimple,
+.completeDetail {
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 1px 3px 10px #2b2b2baf; }
+  .taskSimple__title,
+  .taskDetail__title,
+  .completeSimple__title,
+  .completeDetail__title {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #212121; }
+    .taskSimple__title--checkbox,
+    .taskDetail__title--checkbox,
+    .completeSimple__title--checkbox,
+    .completeDetail__title--checkbox {
+      cursor: pointer; }
+    .taskSimple__title--text,
+    .taskDetail__title--text,
+    .completeSimple__title--text,
+    .completeDetail__title--text {
+      flex-grow: 1;
+      padding-left: 10px; }
+    .taskSimple__title--iconstar, .taskSimple__title--iconstar-full, .taskSimple__title--iconedit, .taskSimple__title--icontrash, .taskSimple__title--iconexpend, .taskSimple__title--iconcollapse,
+    .taskDetail__title--iconstar,
+    .taskDetail__title--iconstar-full,
+    .taskDetail__title--iconedit,
+    .taskDetail__title--icontrash,
+    .taskDetail__title--iconexpend,
+    .taskDetail__title--iconcollapse,
+    .completeSimple__title--iconstar,
+    .completeSimple__title--iconstar-full,
+    .completeSimple__title--iconedit,
+    .completeSimple__title--icontrash,
+    .completeSimple__title--iconexpend,
+    .completeSimple__title--iconcollapse,
+    .completeDetail__title--iconstar,
+    .completeDetail__title--iconstar-full,
+    .completeDetail__title--iconedit,
+    .completeDetail__title--icontrash,
+    .completeDetail__title--iconexpend,
+    .completeDetail__title--iconcollapse {
+      padding: 0 2px 0 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center; }
+    .taskSimple__title--iconstar, .taskSimple__title--iconedit,
+    .taskDetail__title--iconstar,
+    .taskDetail__title--iconedit,
+    .completeSimple__title--iconstar,
+    .completeSimple__title--iconedit,
+    .completeDetail__title--iconstar,
+    .completeDetail__title--iconedit {
+      font-size: 1.8rem; }
+    .taskSimple__title--iconstar-full,
+    .taskDetail__title--iconstar-full,
+    .completeSimple__title--iconstar-full,
+    .completeDetail__title--iconstar-full {
+      font-size: 1.9rem;
+      color: #fe5000; }
+  .taskSimple__content,
+  .taskDetail__content,
+  .completeSimple__content,
+  .completeDetail__content {
+    background-color: #c7c8ca;
+    padding: 20px 25px;
+    font-size: 1.2rem;
+    color: #212121; }
+    .taskSimple__content--deadline,
+    .taskDetail__content--deadline,
+    .completeSimple__content--deadline,
+    .completeDetail__content--deadline {
+      display: flex;
+      margin-bottom: 10px;
+      font-weight: 500;
+      color: #212121; }
+      .taskSimple__content--deadline div,
+      .taskDetail__content--deadline div,
+      .completeSimple__content--deadline div,
+      .completeDetail__content--deadline div {
+        margin-left: 5px; }
+    .taskSimple__content--input--date,
+    .taskDetail__content--input--date,
+    .completeSimple__content--input--date,
+    .completeDetail__content--input--date {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1rem;
+      margin-left: 25px;
+      margin-right: 10px;
+      padding-left: 10px;
+      background-color: #e9eff3;
+      color: #212121; }
+    .taskSimple__content--comment,
+    .taskDetail__content--comment,
+    .completeSimple__content--comment,
+    .completeDetail__content--comment {
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: 500; }
+      .taskSimple__content--comment div,
+      .taskDetail__content--comment div,
+      .completeSimple__content--comment div,
+      .completeDetail__content--comment div {
+        margin-left: 5px; }
+    .taskSimple__content--inputcomment,
+    .taskDetail__content--inputcomment,
+    .completeSimple__content--inputcomment,
+    .completeDetail__content--inputcomment {
+      width: calc(100% - 25px);
+      height: 100px;
+      margin-left: 25px;
+      padding: 10px;
+      border: none;
+      box-sizing: border-box;
+      font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+      font-size: 1.1rem;
+      color: #212121;
+      background-color: #e9eff3; }
+  .taskSimple__submit,
+  .taskDetail__submit,
+  .completeSimple__submit,
+  .completeDetail__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9eff3;
+    height: 60px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer; }
+    .taskSimple__submit--cancel,
+    .taskDetail__submit--cancel,
+    .completeSimple__submit--cancel,
+    .completeDetail__submit--cancel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      color: #B22222; }
+    .taskSimple__submit--save,
+    .taskDetail__submit--save,
+    .completeSimple__submit--save,
+    .completeDetail__submit--save {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      background-color: #002147;
+      color: #fffaec; }
+
+.taskSimple__note,
+.completeSimple__note {
+  display: flex;
+  padding: 0 20px 8px 20px; }
+
+.taskDetail__title {
+  box-shadow: 0 3px 5px #1f1f1f; }
+  .taskDetail__title--text {
+    border: none;
+    background-color: transparent;
+    font-size: 1.3rem;
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    color: #212121; }
+
+.completeSimple__title, .completeSimple__note,
+.completeDetail__title,
+.completeDetail__note {
+  background-color: #71c6c1; }
